@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Contact Us</title>
+		<link rel="stylesheet" href="camac.css">
+		<link rel="icon" href="camac_favicon.ico" type="image/x-icon">
+		<script src="camac.js"></script>
+	</head>
+	<body id="wrapper">
+		<header>
+    		<a href="index.html"><img src="camac_logo.png" width="66" height="66" alt=""></a>
+    		<a class="camac_logo" href="index.html">CAMAC Enterprises Ltd.</a>
+    		<div>
+    			<input class="search_input" type="text" id="search_phrase" placeholder="Search..">
+    			<button class="search_button" onclick="searchMe()">Go</button>
+    		</div>
+    	</header> 
+		<nav>
+            <table>
+            	<tr>
+            		<td><a href="index.html">HOME</a></td>
+					<td><a href="about.html">ABOUT US</a></td>
+					<td><a href="products.html">PRODUCTS</a></td>
+					<td><a href="news.html">NEWS</a></td>
+					<td><a href="navigation.html">SITE MAP</a></td>
+					<td><span class="navcurrent">CONTACT US</span></td>
+            	</tr>
+            </table>
+        </nav>
+        <main>
+        	<section>
+        		<div class="contact_intro">
+					<h3>CAMAC Enterprises Ltd.</h3>
+					
+					
+
+					<h4>Sales Contact</h4>
+					
+					<b>Phone:</b> +1 234 5678<br>
+					<b>Cell:</b> 778 445 6677<br>
+					<br>
+					<b>Email:</b> sales@camac.ca <br>
+					<b>Email:</b> info@camac.ca<br>
+					<b>Website:</b> www.camac.ca<br>
+					<br>
+					<h4>You can also contact us by filling the form below:</h4>
+					<form action="formmail.php" method="post">
+						<input type="hidden" name="recipient" id="recipient" value="camac">
+						<input type="hidden" name="subject" id="subject" value="Inquries">
+						<input type="hidden" name="redirect" id="redirect" value="contact_complete.html">
+						<input type="hidden" name="sort" id="sort" value="order:name,email,inquiry,stuff,stuff1,stuff2,stuff3,stuff4,stuff5,stuff6,stuff7,stuff8,stuff9,other_interest">
+						<div>
+							<div>
+								<label for="name">
+									Name/Enterprise:
+								</label>
+								<input class="name_input" type="text" name="name" id="name" size="30" required="required">
+							</div>
+							<div>
+								<label for="email">
+									Contact Email:
+								</label>
+								<input class="email_input" type="text" name="email" id="email" size="30" required="required">
+							</div>
+
+							<div>
+								<label for="inquiry" class="align_top">
+									Inquiry:
+								</label>
+								<textarea class="inquiry_input" name="inquiry" id="inquiry" rows="5" cols="35">
+								</textarea>
+							</div>
+							
+							<div>
+								<div class="interest_label">
+									What are you interested in?
+								</div>
+								<br>
+								<div>
+									<input type="checkbox" name="stuff1" id="stuff1" value="spring">
+									<label for="stuff1">Sinuous Spring</label>
+									<br>
+									<input type="checkbox" name="stuff2" id="stuff2" value="nonwoven">
+									<label for="stuff2">Non-woven</label>
+									<br>
+									<input type="checkbox" name="stuff3" id="stuff3" value="fiber_pad">
+									<label for="stuff3">Fiber Pad</label>
+									<br>
+									<input type="checkbox" name="stuff4" id="stuff4" value="sofa_fittings">
+									<label for="stuff4">Sofa fittings</label>
+									<br>
+									<input type="checkbox" name="stuff5" id="stuff5" value="sofa_sleeper">
+									<label for="stuff5">Sofa sleepers</label>
+									<br>
+									<input type="checkbox" name="stuff6" id="stuff6" value="sofa_legs">
+									<label for="stuff6">Sofa legs</label>
+									<br>
+									<input type="checkbox" name="stuff7" id="stuff7" value="sofa_webbing">
+									<label for="stuff7">Sofa webbing</label>
+									<br>
+									<input type="checkbox" name="stuff8" id="stuff8" value="gas_springs">
+									<label for="stuff8">Gas springs</label>
+									<br>
+									<input type="checkbox" name="stuff9" id="stuff9" value="other">
+									<label for="stuff9">Other: </label>
+									<input type="text" name="other_interest" id="other_interest" size="30">
+									<br>
+								</div>
+							</div>
+							<div id="formsubmit">
+								<input type="submit" value=" Submit form " class="subbutton">
+								<input type="reset" value=" Reset form ">
+							</div>
+						</div>
+					</form>
+				</div>
+			</section>
+        </main>
+        <footer>
+            <div></div>
+            <small>Copyright &copy; 2018 Camac Enterprises Ltd. created by Sonia (Jane) Zhang</small>
+		</footer>
+	</body>
+</html>
